@@ -697,6 +697,7 @@ body {
 
 .bg-video {
   height: auto;
+  width: 100%;
 }
 
 .card-projects:nth-child(1) .bg-video,
