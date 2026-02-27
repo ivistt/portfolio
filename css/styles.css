@@ -239,9 +239,6 @@ blockquote {
 }
 
 .section.hero {
-  background-image: url("../1.jpg");
-  background-position: 0 80%;
-  background-size: 115%;
   border-bottom-right-radius: 3em;
   border-bottom-left-radius: 3em;
   flex-flow: column;
