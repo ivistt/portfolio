@@ -202,19 +202,17 @@ document.addEventListener("DOMContentLoaded", () => {
 const form = document.querySelector('#my-form');
 const submitBtn = form.querySelector('button[type="submit"]');
 const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbwwthWF3JLOEonp7JBDvNrZuC_HaDS2n5_Q0qINWOZ4qZQWzKreNcpvs05QID73svTa/exec';
-const indexTel = 'qweewq'; // ДОЛЖЕН СОВПАДАТЬ С КЛЮЧОМ В СКРИПТЕ
+const indexTel = 'qweewq';
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
   
-  // Блокируем кнопку, чтобы не отправили дважды
   submitBtn.disabled = true;
   submitBtn.innerText = 'Отправка...';
 
   const formData = new FormData(form);
   const params = new URLSearchParams(formData);
   
-  // Добавляем наш секретный ключ
   params.append('auth_key', indexTel);
 
   try {
@@ -225,16 +223,13 @@ form.addEventListener('submit', async (e) => {
     const result = await response.text();
     
     if (result === "Success") {
-      alert('Заявка успешно отправлена!');
       form.reset();
     } else {
       alert('Ошибка доступа или сервера.');
     }
   } catch (error) {
     console.error('Ошибка:', error);
-    alert('Не удалось связаться с сервером.');
   } finally {
-    // Возвращаем кнопку в рабочее состояние
     submitBtn.disabled = false;
     submitBtn.innerText = 'Отправить';
   }
