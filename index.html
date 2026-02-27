@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Main</title>
+  <meta content="Main" property="og:title">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="body">
+
+  <div class="section hero">
+    <div class="nav">
+      <div class="nav-wrp sh">
+        <div class="container-min space-between"><img
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTc1IiBoZWlnaHQ9IjMxIiB2aWV3Qm94PSIwIDAgMTc1IDMxIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMy43NDk4NyAxOC45MjA3TDMuNzM4NSAxMy45NTQ4SDQuMzk3NTlMMTAuNjcwMyA2Ljk0MzRIMTUuNDc3MUw3Ljc2MTIzIDE1LjUzNDNINi45MDg5NkwzLjc0OTg3IDE4LjkyMDdaTS0wLjAwMDEzMzE2NCAyNC4zOTc5VjEuMTI1MjJINC4xMTM1VjI0LjM5NzlILTAuMDAwMTMzMTY0Wk0xMC45NTQ0IDI0LjM5NzlMNS4yNzI1OSAxNi40NTQ4TDguMDQ1MzIgMTMuNTU3TDE1Ljg3NDkgMjQuMzk3OUgxMC45NTQ0Wk0yMS4wNTIzIDEuMTI1MjJWMjQuMzk3OUgxNi45Mzg2VjEuMTI1MjJIMjEuMDUyM1pNMjQuMDAyNCAyNC4zOTc5VjYuOTQzNEgyOC4xMTZWMjQuMzk3OUgyNC4wMDI0Wk0yNi4wNzA1IDQuNDY2MTNDMjUuNDE5IDQuNDY2MTMgMjQuODU4NCA0LjI1MDIyIDI0LjM4ODcgMy44MTg0QzIzLjkxOSAzLjM3OTAxIDIzLjY4NDIgMi44NTI0OSAyMy42ODQyIDIuMjM4ODZDMjMuNjg0MiAxLjYxNzY1IDIzLjkxOSAxLjA5MTEzIDI0LjM4ODcgMC42NTkzMTNDMjQuODU4NCAwLjIxOTkxOSAyNS40MTkgMC4wMDAyMjI3MDcgMjYuMDcwNSAwLjAwMDIyMjcwN0MyNi43Mjk2IDAuMDAwMjIyNzA3IDI3LjI5MDIgMC4yMTk5MTkgMjcuNzUyNCAwLjY1OTMxM0MyOC4yMjIxIDEuMDkxMTMgMjguNDU2OSAxLjYxNzY1IDI4LjQ1NjkgMi4yMzg4NkMyOC40NTY5IDIuODUyNDkgMjguMjIyMSAzLjM3OTAxIDI3Ljc1MjQgMy44MTg0QzI3LjI5MDIgNC4yNTAyMiAyNi43Mjk2IDQuNDY2MTMgMjYuMDcwNSA0LjQ2NjEzWk00Mi4xOTExIDE3LjA1N1Y2Ljk0MzRINDYuMzA0N1YyNC4zOTc5SDQyLjMxNjFWMjEuMjk1N0g0Mi4xMzQzQzQxLjc0MDQgMjIuMjcyOSA0MS4wOTI2IDIzLjA3MjIgNDAuMTkxMSAyMy42OTM0QzM5LjI5NzIgMjQuMzE0NiAzOC4xOTQ5IDI0LjYyNTIgMzYuODg0MyAyNC42MjUyQzM1Ljc0MDQgMjQuNjI1MiAzNC43MjkgMjQuMzcxNCAzMy44NTAyIDIzLjg2MzlDMzIuOTc5IDIzLjM0ODcgMzIuMjk3MiAyMi42MDI1IDMxLjgwNDcgMjEuNjI1MkMzMS4zMTIzIDIwLjY0MDQgMzEuMDY2MSAxOS40NTEgMzEuMDY2MSAxOC4wNTdWNi45NDM0SDM1LjE3OTdWMTcuNDIwN0MzNS4xNzk3IDE4LjUyNjcgMzUuNDgyOCAxOS40MDU1IDM2LjA4ODggMjAuMDU3QzM2LjY5NDkgMjAuNzA4NiAzNy40OTA0IDIxLjAzNDMgMzguNDc1MiAyMS4wMzQzQzM5LjA4MTMgMjEuMDM0MyAzOS42Njg0IDIwLjg4NjYgNDAuMjM2NiAyMC41OTExQzQwLjgwNDcgMjAuMjk1NyA0MS4yNzA3IDE5Ljg1NjMgNDEuNjM0MyAxOS4yNzI5QzQyLjAwNTUgMTguNjgyIDQyLjE5MTEgMTcuOTQzNCA0Mi4xOTExIDE3LjA1N1pNNTYuODY4NSAyNC43Mzg5QzU1LjEyNjEgMjQuNzM4OSA1My42Mjk5IDI0LjM1NjMgNTIuMzc5OSAyMy41OTExQzUxLjEzNzQgMjIuODI2IDUwLjE3OTEgMjEuNzY5MiA0OS41MDQ5IDIwLjQyMDdDNDguODM4MiAxOS4wNjQ2IDQ4LjUwNDkgMTcuNTA0IDQ4LjUwNDkgMTUuNzM4OUM0OC41MDQ5IDEzLjk2NjEgNDguODQ1OCAxMi40MDE3IDQ5LjUyNzYgMTEuMDQ1N0M1MC4yMDk0IDkuNjgyMDQgNTEuMTcxNSA4LjYyMTQzIDUyLjQxNCA3Ljg2Mzg2QzUzLjY2NCA3LjA5ODcxIDU1LjE0MTIgNi43MTYxMyA1Ni44NDU4IDYuNzE2MTNDNTguMjYyNCA2LjcxNjEzIDU5LjUxNjIgNi45Nzc1IDYwLjYwNzEgNy41MDAyMkM2MS43MDU2IDguMDE1MzcgNjIuNTgwNiA4Ljc0NjQzIDYzLjIzMjEgOS42OTM0QzYzLjg4MzYgMTAuNjMyOCA2NC4yNTQ5IDExLjczMTMgNjQuMzQ1OCAxMi45ODg5SDYwLjQxNEM2MC4yNTQ5IDEyLjE0NzkgNTkuODc2MSAxMS40NDcyIDU5LjI3NzYgMTAuODg2NkM1OC42ODY3IDEwLjMxODQgNTcuODk1IDEwLjAzNDMgNTYuOTAyNiAxMC4wMzQzQzU2LjA2MTcgMTAuMDM0MyA1NS4zMjMgMTAuMjYxNiA1NC42ODY3IDEwLjcxNjFDNTQuMDUwMyAxMS4xNjMxIDUzLjU1NDEgMTEuODA3IDUzLjE5OCAxMi42NDc5QzUyLjg0OTYgMTMuNDg4OSA1Mi42NzUzIDE0LjQ5NjQgNTIuNjc1MyAxNS42NzA3QzUyLjY3NTMgMTYuODYwMSA1Mi44NDk2IDE3Ljg4MjggNTMuMTk4IDE4LjczODlDNTMuNTQ2NSAxOS41ODczIDU0LjAzNTIgMjAuMjQyNiA1NC42NjQgMjAuNzA0OEM1NS4zMDAzIDIxLjE1OTMgNTYuMDQ2NSAyMS4zODY2IDU2LjkwMjYgMjEuMzg2NkM1Ny41MDg2IDIxLjM4NjYgNTguMDUwMyAyMS4yNzI5IDU4LjUyNzYgMjEuMDQ1N0M1OS4wMTI0IDIwLjgxMDggNTkuNDE3NyAyMC40NzM3IDU5Ljc0MzUgMjAuMDM0M0M2MC4wNjkzIDE5LjU5NDkgNjAuMjkyNyAxOS4wNjA4IDYwLjQxNCAxOC40MzJINjQuMzQ1OEM2NC4yNDczIDE5LjY2NjkgNjMuODgzNiAyMC43NjE2IDYzLjI1NDkgMjEuNzE2MUM2Mi42MjYxIDIyLjY2MzEgNjEuNzcgMjMuNDA1NSA2MC42ODY3IDIzLjk0MzRDNTkuNjAzMyAyNC40NzM3IDU4LjMzMDYgMjQuNzM4OSA1Ni44Njg1IDI0LjczODlaTTcwLjU1NzIgMTQuMTcwN1YyNC4zOTc5SDY2LjQ0MzZWMS4xMjUyMkg3MC40NjYzVjkuOTA5MzFINzAuNjcwOUM3MS4wOCA4LjkyNDQ2IDcxLjcxMjUgOC4xNDc5NSA3Mi41Njg2IDcuNTc5NzdDNzMuNDMyMiA3LjAwNDAxIDc0LjUzMDcgNi43MTYxMyA3NS44NjQxIDYuNzE2MTNDNzcuMDc2MiA2LjcxNjEzIDc4LjEzMyA2Ljk2OTkyIDc5LjAzNDUgNy40Nzc0OUM3OS45MzYgNy45ODUwNyA4MC42MzMgOC43Mjc0OSA4MS4xMjU0IDkuNzA0NzdDODEuNjI1NCAxMC42ODIgODEuODc1NCAxMS44NzUyIDgxLjg3NTQgMTMuMjg0M1YyNC4zOTc5SDc3Ljc2MThWMTMuOTIwN0M3Ny43NjE4IDEyLjc0NjQgNzcuNDU4OCAxMS44MzM2IDc2Ljg1MjcgMTEuMTgyQzc2LjI1NDIgMTAuNTIyOSA3NS40MTMzIDEwLjE5MzQgNzQuMzMgMTAuMTkzNEM3My42MDI3IDEwLjE5MzQgNzIuOTUxMiAxMC4zNTI1IDcyLjM3NTQgMTAuNjcwN0M3MS44MDcyIDEwLjk4MTMgNzEuMzYwMyAxMS40MzIgNzEuMDM0NSAxMi4wMjI5QzcwLjcxNjMgMTIuNjEzOSA3MC41NTcyIDEzLjMyOTggNzAuNTU3MiAxNC4xNzA3Wk05Mi41MTU5IDI0LjczODlDOTAuNzY1OSAyNC43Mzg5IDg5LjI1NDUgMjQuMzc1MiA4Ny45ODE4IDIzLjY0NzlDODYuNzE2NiAyMi45MTMxIDg1Ljc0MzIgMjEuODc1MiA4NS4wNjEzIDIwLjUzNDNDODQuMzc5NSAxOS4xODU4IDg0LjAzODYgMTcuNTk4NyA4NC4wMzg2IDE1Ljc3MjlDODQuMDM4NiAxMy45Nzc1IDg0LjM3OTUgMTIuNDAxNyA4NS4wNjEzIDExLjA0NTdDODUuNzUwNyA5LjY4MjA0IDg2LjcxMjkgOC42MjE0MyA4Ny45NDc3IDcuODYzODZDODkuMTgyNSA3LjA5ODcxIDkwLjYzMzMgNi43MTYxMyA5Mi4zIDYuNzE2MTNDOTMuMzc1NyA2LjcxNjEzIDk0LjM5MDkgNi44OTAzNyA5NS4zNDU0IDcuMjM4ODZDOTYuMzA3NSA3LjU3OTc3IDk3LjE1NiA4LjExMDA3IDk3Ljg5MDkgOC44Mjk3N0M5OC42MzMzIDkuNTQ5NDYgOTkuMjE2NiAxMC40NjYxIDk5LjY0MDkgMTEuNTc5OEMxMDAuMDY1IDEyLjY4NTggMTAwLjI3NyAxNC4wMDQgMTAwLjI3NyAxNS41MzQzVjE2Ljc5NTdIODUuOTcwNFYxNC4wMjI5SDk2LjMzNDFDOTYuMzI2NSAxMy4yMzUxIDk2LjE1NiAxMi41MzQzIDk1LjgyMjcgMTEuOTIwN0M5NS40ODk0IDExLjI5OTUgOTUuMDIzNSAxMC44MTA4IDk0LjQyNSAxMC40NTQ4QzkzLjgzNDEgMTAuMDk4NyA5My4xNDQ3IDkuOTIwNjggOTIuMzU2OCA5LjkyMDY4QzkxLjUxNTkgOS45MjA2OCA5MC43NzcyIDEwLjEyNTIgOTAuMTQwOSAxMC41MzQzQzg5LjUwNDUgMTAuOTM1OCA4OS4wMDgzIDExLjQ2NjEgODguNjUyMiAxMi4xMjUyQzg4LjMwMzggMTIuNzc2NyA4OC4xMjU3IDEzLjQ5MjYgODguMTE4MiAxNC4yNzI5VjE2LjY5MzRDODguMTE4MiAxNy43MDg2IDg4LjMwMzggMTguNTc5OCA4OC42NzUgMTkuMzA3Qzg5LjA0NjIgMjAuMDI2NyA4OS41NjUxIDIwLjU3OTggOTAuMjMxOCAyMC45NjYxQzkwLjg5ODUgMjEuMzQ0OSA5MS42Nzg4IDIxLjUzNDMgOTIuNTcyNyAyMS41MzQzQzkzLjE3MTIgMjEuNTM0MyA5My43MTI5IDIxLjQ1MSA5NC4xOTc3IDIxLjI4NDNDOTQuNjgyNSAyMS4xMTAxIDk1LjEwMyAyMC44NTYzIDk1LjQ1OTEgMjAuNTIyOUM5NS44MTUxIDIwLjE4OTYgOTYuMDg0MSAxOS43NzY3IDk2LjI2NTkgMTkuMjg0M0wxMDAuMTA3IDE5LjcxNjFDOTkuODY0NCAyMC43MzEzIDk5LjQwMjIgMjEuNjE3NiA5OC43MjA0IDIyLjM3NTJDOTguMDQ2MiAyMy4xMjUyIDk3LjE4MjUgMjMuNzA4NiA5Ni4xMjk1IDI0LjEyNTJDOTUuMDc2NSAyNC41MzQzIDkzLjg3MTkgMjQuNzM4OSA5Mi41MTU5IDI0LjczODlaTTExNy41NjggNi45NDM0TDExMS4zNTIgMjQuMzk3OUgxMDYuODA3TDEwMC41OTEgNi45NDM0SDEwNC45NzdMMTA4Ljk4OSAxOS45MDkzSDEwOS4xNzFMMTEzLjE5MyA2Ljk0MzRIMTE3LjU2OFpNMTMyLjkzIDExLjU1N0wxMjkuMTggMTEuOTY2MUMxMjkuMDc0IDExLjU4NzMgMTI4Ljg4OSAxMS4yMzEzIDEyOC42MjMgMTAuODk4QzEyOC4zNjYgMTAuNTY0NiAxMjguMDE3IDEwLjI5NTcgMTI3LjU3OCAxMC4wOTExQzEyNy4xMzkgOS44ODY1OSAxMjYuNjAxIDkuNzg0MzEgMTI1Ljk2NCA5Ljc4NDMxQzEyNS4xMDggOS43ODQzMSAxMjQuMzg5IDkuOTY5OTIgMTIzLjgwNSAxMC4zNDExQzEyMy4yMyAxMC43MTIzIDEyMi45NDUgMTEuMTkzNCAxMjIuOTUzIDExLjc4NDNDMTIyLjk0NSAxMi4yOTE5IDEyMy4xMzEgMTIuNzA0OCAxMjMuNTEgMTMuMDIyOUMxMjMuODk2IDEzLjM0MTEgMTI0LjUzMyAxMy42MDI1IDEyNS40MTkgMTMuODA3TDEyOC4zOTYgMTQuNDQzNEMxMzAuMDQ4IDE0Ljc5OTUgMTMxLjI3NSAxNS4zNjM5IDEzMi4wNzggMTYuMTM2NkMxMzIuODg5IDE2LjkwOTMgMTMzLjI5OCAxNy45MjA3IDEzMy4zMDUgMTkuMTcwN0MxMzMuMjk4IDIwLjI2OTIgMTMyLjk3NiAyMS4yMzg5IDEzMi4zMzkgMjIuMDc5OEMxMzEuNzExIDIyLjkxMzEgMTMwLjgzNiAyMy41NjQ2IDEyOS43MTQgMjQuMDM0M0MxMjguNTkzIDI0LjUwNCAxMjcuMzA1IDI0LjczODkgMTI1Ljg1MSAyNC43Mzg5QzEyMy43MTQgMjQuNzM4OSAxMjEuOTk1IDI0LjI5MTkgMTIwLjY5MiAyMy4zOTc5QzExOS4zODkgMjIuNDk2NCAxMTguNjEyIDIxLjI0MjYgMTE4LjM2MiAxOS42MzY2TDEyMi4zNzMgMTkuMjUwMkMxMjIuNTU1IDIwLjAzODEgMTIyLjk0MiAyMC42MzI4IDEyMy41MzMgMjEuMDM0M0MxMjQuMTIzIDIxLjQzNTggMTI0Ljg5MiAyMS42MzY2IDEyNS44MzkgMjEuNjM2NkMxMjYuODE3IDIxLjYzNjYgMTI3LjYwMSAyMS40MzU4IDEyOC4xOTIgMjEuMDM0M0MxMjguNzkgMjAuNjMyOCAxMjkuMDg5IDIwLjEzNjYgMTI5LjA4OSAxOS41NDU3QzEyOS4wODkgMTkuMDQ1NyAxMjguODk2IDE4LjYzMjggMTI4LjUxIDE4LjMwN0MxMjguMTMxIDE3Ljk4MTMgMTI3LjU0IDE3LjczMTMgMTI2LjczNyAxNy41NTdMMTIzLjc2IDE2LjkzMkMxMjIuMDg2IDE2LjU4MzYgMTIwLjg0NyAxNS45OTY0IDEyMC4wNDQgMTUuMTcwN0MxMTkuMjQxIDE0LjMzNzMgMTE4Ljg0MyAxMy4yODQzIDExOC44NTEgMTIuMDExNkMxMTguODQzIDEwLjkzNTggMTE5LjEzNSAxMC4wMDQgMTE5LjcyNiA5LjIxNjEzQzEyMC4zMjQgOC40MjA2OCAxMjEuMTU0IDcuODA3MDQgMTIyLjIxNCA3LjM3NTIyQzEyMy4yODMgNi45MzU4MyAxMjQuNTE0IDYuNzE2MTMgMTI1LjkwOCA2LjcxNjEzQzEyNy45NTMgNi43MTYxMyAxMjkuNTYzIDcuMTUxNzQgMTMwLjczNyA4LjAyMjk1QzEzMS45MTkgOC44OTQxNiAxMzIuNjUgMTAuMDcyMiAxMzIuOTMgMTEuNTU3Wk0xMzkuMTY3IDE4LjkyMDdMMTM5LjE1NiAxMy45NTQ4SDEzOS44MTVMMTQ2LjA4OCA2Ljk0MzRIMTUwLjg5NUwxNDMuMTc5IDE1LjUzNDNIMTQyLjMyNkwxMzkuMTY3IDE4LjkyMDdaTTEzNS40MTcgMjQuMzk3OVYxLjEyNTIySDEzOS41MzFWMjQuMzk3OUgxMzUuNDE3Wk0xNDYuMzcyIDI0LjM5NzlMMTQwLjY5IDE2LjQ1NDhMMTQzLjQ2MyAxMy41NTdMMTUxLjI5MiAyNC4zOTc5SDE0Ni4zNzJaTTE1NS4xIDMwLjk0MzRDMTU0LjU0IDMwLjk0MzQgMTU0LjAyMSAzMC44OTc5IDE1My41NDQgMzAuODA3QzE1My4wNzQgMzAuNzIzNyAxNTIuNjk5IDMwLjYyNTIgMTUyLjQxOSAzMC41MTE2TDE1My4zNzMgMjcuMzA3QzE1My45NzIgMjcuNDgxMyAxNTQuNTA2IDI3LjU2NDYgMTU0Ljk3NSAyNy41NTdDMTU1LjQ0NSAyNy41NDk1IDE1NS44NTggMjcuNDAxNyAxNTYuMjE0IDI3LjExMzlDMTU2LjU3OCAyNi44MzM2IDE1Ni44ODUgMjYuMzYzOSAxNTcuMTM1IDI1LjcwNDhMMTU3LjQ4NyAyNC43NjE2TDE1MS4xNTcgNi45NDM0SDE1NS41MjFMMTU5LjU0NCAyMC4xMjUySDE1OS43MjVMMTYzLjc2IDYuOTQzNEgxNjguMTM1TDE2MS4xNDYgMjYuNTExNkMxNjAuODIgMjcuNDM1OCAxNjAuMzg4IDI4LjIyNzUgMTU5Ljg1IDI4Ljg4NjZDMTU5LjMxMyAyOS41NTMzIDE1OC42NTMgMzAuMDYwOCAxNTcuODczIDMwLjQwOTNDMTU3LjEgMzAuNzY1NCAxNTYuMTc2IDMwLjk0MzQgMTU1LjEgMzAuOTQzNFpNMTY5LjcwMSAyNC4zOTc5VjYuOTQzNEgxNzMuODE1VjI0LjM5NzlIMTY5LjcwMVpNMTcxLjc2OSA0LjQ2NjEzQzE3MS4xMTggNC40NjYxMyAxNzAuNTU3IDQuMjUwMjIgMTcwLjA4NyAzLjgxODRDMTY5LjYxOCAzLjM3OTAxIDE2OS4zODMgMi44NTI0OSAxNjkuMzgzIDIuMjM4ODZDMTY5LjM4MyAxLjYxNzY1IDE2OS42MTggMS4wOTExMyAxNzAuMDg3IDAuNjU5MzEzQzE3MC41NTcgMC4yMTk5MTkgMTcxLjExOCAwLjAwMDIyMjcwNyAxNzEuNzY5IDAuMDAwMjIyNzA3QzE3Mi40MjggMC4wMDAyMjI3MDcgMTcyLjk4OSAwLjIxOTkxOSAxNzMuNDUxIDAuNjU5MzEzQzE3My45MjEgMS4wOTExMyAxNzQuMTU2IDEuNjE3NjUgMTc0LjE1NiAyLjIzODg2QzE3NC4xNTYgMi44NTI0OSAxNzMuOTIxIDMuMzc5MDEgMTczLjQ1MSAzLjgxODRDMTcyLjk4OSA0LjI1MDIyIDE3Mi40MjggNC40NjYxMyAxNzEuNzY5IDQuNDY2MTNaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K"
+            loading="lazy" alt="" class="logo"><a href="https://t.me/ivistt" target="_blank"
+            class="button w-inline-block">
+            <div>Узнать стоимость</div>
+          </a><a href="." class="button-main hide w-inline-block">
+            <div>Посмотреть работы</div>
+          </a></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="heading-wrapper-hero anim-open"
+        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%); opacity: 1;">
+        <div class="left-wrp-bullets">
+          <div class="pl-white">
+            <div id="scc" class="t-32">кад<span class="dud">_</span>жн<span class="dud">_</span>й<span
+                class="dud">z</span><span class="dud">w</span><span class="dud">t</span></div>
+          </div>
+        </div>
+        <h1 class="h1">Запуск лендинга <span class="text-span">за 1 день</span></h1>
+        <p class="t-28">для вашего курса или вебинара</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section abs">
+    <div class="container">
+      <div class="grid-benefits">
+        <div class="card-benefit sh">
+          <div class="h2"><span class="count">90</span>+</div>
+          <div class="t-20">запущенных проектов</div>
+        </div>
+        <div class="card-benefit sh">
+          <div class="h2"><span class="count">4</span>+</div>
+          <div class="t-20">года в веб-разработке</div>
+        </div>
+        <div class="card-benefit sh">
+          <div class="h2">16+</div>
+          <div class="t-20">стран, где пользуются</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section max">
+    <div class="container">
+      <p class="t-48 anim"><span class="word" style="color: rgb(170, 170, 170);">Специализируюсь</span> <span
+          class="word" style="color: rgb(170, 170, 170);">на</span> <span class="word"
+          style="color: rgb(170, 170, 170);">создании</span> <span class="word"
+          style="color: rgb(170, 170, 170);">экосистем</span> <span class="word"
+          style="color: rgb(170, 170, 170);">для</span> <span class="word"
+          style="color: rgb(170, 170, 170);">онлайн-образования:</span> <span class="word"
+          style="color: rgb(170, 170, 170);">от</span> <span class="word"
+          style="color: rgb(170, 170, 170);">посадочных</span> <span class="word"
+          style="color: rgb(170, 170, 170);">страниц</span> <span class="word"
+          style="color: rgb(170, 170, 170);">вебинаров</span> <span class="word"
+          style="color: rgb(170, 170, 170);">до</span> <span class="word"
+          style="color: rgb(170, 170, 170);">настройки</span> <span class="word"
+          style="color: rgb(170, 170, 170);">личных</span> <span class="word"
+          style="color: rgb(170, 170, 170);">кабинетов.За</span> <span class="word"
+          style="color: rgb(170, 170, 170);">4</span> <span class="word" style="color: rgb(170, 170, 170);">года</span>
+        <span class="word" style="color: rgb(170, 170, 170);">я</span> <span class="word"
+          style="color: rgb(170, 170, 170);">запустил</span> <span class="word"
+          style="color: rgb(170, 170, 170);">более</span> <span class="word"
+          style="color: rgb(170, 170, 170);">90</span> <span class="word"
+          style="color: rgb(170, 170, 170);">проектов.</span> <span class="word"
+          style="color: rgb(170, 170, 170);">Мой</span> <span class="word"
+          style="color: rgb(170, 170, 170);">подход</span> <span class="word"
+          style="color: rgb(170, 170, 170);">—</span> <span class="word"
+          style="color: rgb(170, 170, 170);">скорость</span> <span class="word"
+          style="color: rgb(170, 170, 170);">без</span> <span class="word"
+          style="color: rgb(170, 170, 170);">потери</span> <span class="word"
+          style="color: rgb(170, 170, 170);">технической</span> <span class="word"
+          style="color: rgb(170, 170, 170);">надежности.</span> <span class="word"
+          style="color: rgb(170, 170, 170);">Я</span> <span class="word" style="color: rgb(170, 170, 170);">знаю,</span>
+        <span class="word" style="color: rgb(170, 170, 170);">как</span> <span class="word"
+          style="color: rgb(170, 170, 170);">собрать</span> <span class="word"
+          style="color: rgb(170, 170, 170);">сайт</span> <span class="word"
+          style="color: rgb(170, 170, 170);">так,</span> <span class="word"
+          style="color: rgb(170, 170, 170);">чтобы</span> <span class="word"
+          style="color: rgb(170, 170, 170);">он</span> <span class="word"
+          style="color: rgb(170, 170, 170);">выдержал</span> <span class="word"
+          style="color: rgb(170, 170, 170);">наплыв</span> <span class="word"
+          style="color: rgb(170, 170, 170);">трафика</span> <span class="word"
+          style="color: rgb(170, 170, 170);">во</span> <span class="word"
+          style="color: rgb(170, 170, 170);">время</span> <span class="word"
+          style="color: rgb(170, 170, 170);">вашего</span> <span class="word"
+          style="color: rgb(170, 170, 170);">запуска</span> <span class="word"
+          style="color: rgb(170, 170, 170);">и</span> <span class="word"
+          style="color: rgb(170, 170, 170);">корректно</span> <span class="word"
+          style="color: rgb(170, 170, 170);">отображался</span> <span class="word"
+          style="color: rgb(170, 170, 170);">на</span> <span class="word" style="color: rgb(170, 170, 170);">всех</span>
+        <span class="word" style="color: rgb(170, 170, 170);">устройствах</span></p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="wrp-hor">
+        <div class="heading-wrapper anim-open"
+          style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%); opacity: 1;">
+          <h2 class="h2 sticky">Этапы работы</h2>
+        </div>
+        <div class="content">
+          <div class="steps-wrapper">
+            <div class="card-steps sh anim-open"
+              style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%); opacity: 1;">
+              <h3 class="h3">Анализ и прототип</h3>
+              <p class="t-20">Обсуждаем задачу, структуру и логику. Для проектов «под ключ» на этом этапе я готовлю
+                тексты и подбираю визуал.</p>
+            </div>
+            <div class="card-steps sh anim-open"
+              style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%); opacity: 1;">
+              <h3 class="h3">Дизайн и стиль</h3>
+              <p class="t-20">Создаю макет в Figma (или использую ваш готовый). Утверждаем шрифты, цвета и общую
+                стилистику.</p>
+            </div>
+            <div class="card-steps sh anim-open"
+              style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%); opacity: 1;">
+              <h3 class="h3">Верстка и магия</h3>
+              <p class="t-20">Делаю сайт адаптивным под мобильные устройства и настраиваю анимации.</p>
+            </div>
+            <div class="card-steps sh anim-open"
+              style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%); opacity: 1;">
+              <h3 class="h3">Запуск и передача * Под ключ</h3>
+              <p class="t-20">Подключаю домен, формы заявок и аналитику. Вы получаете готовый бизнес-инструмент.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="works" class="section">
+    <div class="container">
+      <div class="heading-wrapper">
+        <h2 class="h2 sticky">Последние работы</h2>
+      </div>
+      <div class="grid-projects">
+        <div class="card-projects sh anim-open"
+          style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%); opacity: 1;"><video
+            class="bg-video" src="video/1.mp4" autoplay loop muted playsinline></video>
+          <div class="t-32">Сайт для дизайнера интерьера</div>
+          <p class="t-20">Легкий, красивый сайт, много фото внутри лайтбоксов без CMS, ручное добавление. Верстка заняла
+            1 день</p>
+        </div>
+        <div class="card-projects sh anim-open"
+          style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%); opacity: 1;"><video
+            class="bg-video" src="video/2.mp4" autoplay loop muted playsinline></video>
+          <div class="t-32">Сайт курса для сейлз менеджеров</div>
+          <p class="t-20">Легкий, красивый сайт, много фото внутри лайтбоксов без CMS, ручное добавление. Верстка заняла
+            1 день</p>
+        </div>
+        <div class="card-projects sh anim-open"
+          style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%); opacity: 1;"><video
+            class="bg-video" src="video/3.mp4" autoplay loop muted playsinline></video>
+          <div class="t-32">Пидорасы</div>
+          <p class="t-20">Легкий, красивый сайт, много фото внутри лайтбоксов без CMS, ручное добавление. Верстка заняла
+            1 день</p>
+        </div>
+        <div class="card-projects sh anim-open"
+          style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%); opacity: 1;"><video
+            class="bg-video" src="video/4.mp4" autoplay loop muted playsinline></video>
+          <div class="t-32">Сайт для AI помощника работы с таблицами</div>
+          <p class="t-20">Легкий, красивый сайт, много фото внутри лайтбоксов без CMS, ручное добавление. Верстка заняла
+            1 день</p>
+        </div>
+        <div class="card-projects sh anim-open"
+          style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%); opacity: 1;"><video
+            class="bg-video" src="video/5.mp4" autoplay loop muted playsinline></video>
+          <div class="t-32">Сайт для немецкой строительной компании</div>
+          <p class="t-20">Легкий, красивый сайт, много фото внутри лайтбоксов без CMS, ручное добавление. Верстка заняла
+            1 день</p>
+        </div>
+        <div class="card-projects sh anim-open"
+          style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%); opacity: 1;"><video
+            class="bg-video" src="video/6.mp4" autoplay loop muted playsinline></video>
+          <div class="t-32">Сайт для закрытой биржи</div>
+          <p class="t-20">Легкий, красивый сайт, много фото внутри лайтбоксов без CMS, ручное добавление. Верстка заняла
+            1 день</p>
+        </div>
+        <div class="card-projects sh anim-open"
+          style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%); opacity: 1;"><video
+            class="bg-video" src="video/7.mp4" autoplay loop muted playsinline></video>
+          <div class="t-32">Swiftglass - быстрая замена автостекол</div>
+          <p class="t-20">Легкий, красивый сайт, много фото внутри лайтбоксов без CMS, ручное добавление. Верстка заняла
+            1 день</p>
+        </div>
+        <div class="card-projects sh anim-open"
+          style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%); opacity: 1;"><video
+            class="bg-video" src="video/8.mp4" autoplay loop muted playsinline></video>
+          <div class="t-32">Сайт по заказу военного снаряжения</div>
+          <p class="t-20">Легкий, красивый сайт, много фото внутри лайтбоксов без CMS, ручное добавление. Верстка заняла
+            1 день</p>
+        </div>
+        <div class="card-projects sh anim-open"
+          style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%); opacity: 1;"><video
+            class="bg-video" src="video/9.mp4" autoplay loop muted playsinline></video>
+          <div class="t-32">Сайт для ИИ аналитического сервиса</div>
+          <p class="t-20">Легкий, красивый сайт, много фото внутри лайтбоксов без CMS, ручное добавление. Верстка заняла
+            1 день</p>
+        </div>
+        <div class="card-projects sh anim-open"
+          style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%); opacity: 1;"><video
+            class="bg-video" src="video/10.mp4" autoplay loop muted playsinline></video>
+          <div class="t-32">Сайт для продажи курса по продажам</div>
+          <p class="t-20">Легкий, красивый сайт, много фото внутри лайтбоксов без CMS, ручное добавление. Верстка заняла
+            1 день</p>
+        </div>
+        <div class="card-projects sh anim-open"
+          style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%); opacity: 1;"><video
+            class="bg-video" src="video/11.mp4" autoplay loop muted playsinline></video>
+          <div class="t-32">Сайт для саммита</div>
+          <p class="t-20">Легкий, красивый сайт, много фото внутри лайтбоксов без CMS, ручное добавление. Верстка заняла
+            1 день</p>
+        </div>
+        <div class="card-projects sh anim-open"
+          style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%); opacity: 1;"><video
+            class="bg-video" src="video/12.mp4" autoplay loop muted playsinline></video>
+          <div class="t-32">Просто сайт</div>
+          <p class="t-20">Легкий, красивый сайт, много фото внутри лайтбоксов без CMS, ручное добавление. Верстка заняла
+            1 день</p>
+        </div>
+        <div class="card-projects sh anim-open"
+          style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%); opacity: 1;"><video
+            class="bg-video" src="video/13.mp4" autoplay loop muted playsinline></video>
+          <div class="t-32">Сайт для курса по продвижению соц сетей</div>
+          <p class="t-20">Легкий, красивый сайт, много фото внутри лайтбоксов без CMS, ручное добавление. Верстка заняла
+            1 день</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/main.js"></script>
+  <script> window.addEventListener('load', () => {
+  document.querySelectorAll('video.bg-video').forEach(v => {
+    v.muted = true;
+    v.play().catch(() => {});
+  });
+});</script>
+</body>
+
+</html>
