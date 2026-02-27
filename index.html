@@ -257,7 +257,42 @@
       </div>
     </div>
   </section>
-  </main>
+  <section class="section contact-section">
+    <div class="container">
+      <div class="contact-card sh">
+        <h2 class="t-32">Написати про проєкт</h2>
+        <p class="t-20">Відповім протягом дня</p>
+
+        <form id="my-form" action="#" method="POST" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="name">Введіть ваше ім'я</label>
+              <div class="input-wrap">
+                <input class="form-input" type="text" id="name" name="name" placeholder="Олена" required>
+                <span class="check-icon">&#10003;</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="telegram">Telegram</label>
+              <div class="input-wrap">
+                <input class="form-input" type="text" id="telegram" name="telegram" placeholder="@username" required>
+                <span class="check-icon">&#10003;</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group msg-group">
+            <label class="form-label" for="message">Про проєкт</label>
+            <textarea class="form-input form-textarea" id="message" name="message" placeholder="Розкажіть коротко про ваш проєкт..." required></textarea>
+          </div>
+
+          <div class="form-footer">
+            <button class="form-submit" type="submit">Відправити</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
 
 
   <script src="js/main.js"></script>
