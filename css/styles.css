@@ -270,7 +270,7 @@ blockquote {
 }
 
 .nav {
-  z-index: 99;
+  z-index: 100;
   justify-content: center;
   align-items: center;
   padding: 1em 6em;
@@ -294,7 +294,7 @@ blockquote {
 }
 
 .nav-wrp {
-  z-index: 150;
+  z-index: 200;
   background-color: var(--white);
   border-radius: 1em;
   padding: 1em 1em 1em 2em;
@@ -501,6 +501,24 @@ blockquote {
 .text-span {
   font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
   font-style: italic;
+}
+
+
+.img_hero {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  object-position: 0 80%;
+  transform: scale(1.15);
+}
+
+@media (max-width: 768px) {
+  .img_hero {
+    object-position: 78% 120%;
+    transform: scale(1);
+  }
 }
 
 @media screen and (max-width: 767px) {
