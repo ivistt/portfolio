@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const el = document.querySelector('#scc');
   if (!el) return;
 
-  const phrases = ['быстрый', 'надежный', 'качественный'];
+  const phrases = ['швидка', 'надiйна', 'якiсна'];
   const fx = new TextScramble(el);
   let counter = 0;
 
