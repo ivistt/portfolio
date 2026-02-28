@@ -39,28 +39,28 @@
 
   gsap.registerPlugin(ScrollTrigger);
 
-  // Анимация слов по скроллу
-  gsap.utils.toArray(".anim").forEach((element) => {
-    const words = element.innerText.split(" ");
-    element.innerHTML = words
-      .map((word) => `<span class="word">${word}</span>`)
-      .join(" ");
+// Анимация слов по скроллу
+gsap.utils.toArray(".anim").forEach((element) => {
+  const words = element.innerText.split(" ");
+  element.innerHTML = words
+    .map((word) => `<span class="word">${word}</span>`)
+    .join(" ");
 
-    gsap.fromTo(
-      element.querySelectorAll(".word"),
-      { color: "#aaaaaa" },
-      {
-        color: "#000000",
-        stagger: 0.1,
-        scrollTrigger: {
-          trigger: element,
-          start: "top 80%",
-          end: "bottom 20%",
-          scrub: true,
-        },
-      }
-    );
-  });
+  gsap.fromTo(
+    element.querySelectorAll(".word"),
+    { color: "#767689" },
+    {
+      color: "#000000",
+      stagger: 0.1,
+      scrollTrigger: {
+        trigger: element,
+        start: "top 80%",
+        end: "bottom 20%",
+        scrub: true,
+      },
+    }
+  );
+});
 
   // Анимация появления
   gsap.utils.toArray(".anim-open").forEach((element) => {
