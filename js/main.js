@@ -204,40 +204,6 @@ const submitBtn = form.querySelector('button[type="submit"]');
 const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbwwthWF3JLOEonp7JBDvNrZuC_HaDS2n5_Q0qINWOZ4qZQWzKreNcpvs05QID73svTa/exec';
 const indexTel = 'qweewq';
 
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  
-  submitBtn.disabled = true;
-  submitBtn.innerText = 'Отправка...';
-
-  const formData = new FormData(form);
-  const params = new URLSearchParams(formData);
-  
-  params.append('auth_key', indexTel);
-
-  try {
-    const response = await fetch(`${WEB_APP_URL}?${params.toString()}`, {
-      method: 'POST'
-    });
-    
-    const result = await response.text();
-    
-    if (result === "Success") {
-      form.reset();
-    } else {
-      alert('Ошибка доступа или сервера.');
-    }
-  } catch (error) {
-    console.error('Ошибка:', error);
-  } finally {
-    submitBtn.disabled = false;
-    submitBtn.innerText = 'Отправить';
-  }
-});
-
-
-
-
 const popup = document.getElementById('successPopup');
 const popupClose = document.getElementById('popupClose');
 
@@ -251,22 +217,56 @@ function closePopup() {
   document.body.style.overflow = '';
 }
 
-// Закрытие крестиком
 popupClose.addEventListener('click', closePopup);
+popup.addEventListener('click', (e) => { if (e.target === popup) closePopup(); });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closePopup(); });
 
-// Закрытие по фону
-popup.addEventListener('click', (e) => {
-  if (e.target === popup) closePopup();
-});
-
-// Закрытие по Escape
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') closePopup();
-});
-
-// Отправка формы
-document.getElementById('my-form').addEventListener('submit', (e) => {
+form.addEventListener('submit', async (e) => {
   e.preventDefault();
-  // Здесь ваша логика отправки (fetch/AJAX)
-  openPopup();
+
+  // Валідація
+  const name = form.querySelector('#name').value.trim();
+  const telegram = form.querySelector('#telegram').value.trim();
+  const message = form.querySelector('#message').value.trim();
+
+  if (!name || !telegram || !message) {
+    form.querySelectorAll('[required]').forEach(field => {
+      if (!field.value.trim()) field.classList.add('input-error');
+    });
+    return;
+  }
+
+  submitBtn.disabled = true;
+  submitBtn.innerText = 'Відправка...';
+
+  const formData = new FormData(form);
+  const params = new URLSearchParams(formData);
+  params.append('auth_key', indexTel);
+
+  try {
+    const response = await fetch(`${WEB_APP_URL}?${params.toString()}`, {
+      method: 'POST'
+    });
+
+    const result = await response.text();
+
+    if (result === "Success") {
+      form.reset();
+      form.querySelectorAll('.input-error').forEach(f => f.classList.remove('input-error'));
+      openPopup();
+    } else {
+      alert('Помилка сервера. Спробуйте ще раз.');
+    }
+  } catch (error) {
+    console.error('Помилка:', error);
+    alert('Помилка з\'єднання. Спробуйте ще раз.');
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.innerText = 'Відправити';
+  }
+});
+
+// Знімаємо помилку при введенні
+form.querySelectorAll('[required]').forEach(field => {
+  field.addEventListener('input', () => field.classList.remove('input-error'));
 });

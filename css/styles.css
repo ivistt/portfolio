@@ -258,6 +258,7 @@ blockquote {
   padding-bottom: 6em;
 }
 
+
 .section.abs {
   margin-top: -10.6em;
   padding-top: 3em;
@@ -783,6 +784,9 @@ body {
     .msg-group { margin-bottom: 1.5em; }
     .form-label { font-size: 1em; color: #999; font-weight: 500; }
     .input-wrap { position: relative; }
+    .input-error {
+  border-color: #e53e3e !important;
+}
     .form-input {
       width: 100%;
       background: #f2f4f7;
@@ -912,3 +916,33 @@ filter: blur(15px);
   overflow: hidden;
   border-radius: 1em;
 }
+
+
+.image-wrapper{
+  width: 100%;
+  align-items: center;
+  border-radius: 1.5em;
+  overflow: hidden;
+  margin-top: 1.5em;
+
+}
+
+.img-100{
+  height: auto;
+}
+
+
+.grid-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    align-items: center;
+  }
+
+
+  @media (max-width: 768px) {
+    .grid-two {
+      grid-template-columns: 1fr;
+      gap: 2em;
+    }
+  }
