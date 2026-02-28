@@ -234,3 +234,39 @@ form.addEventListener('submit', async (e) => {
     submitBtn.innerText = 'Отправить';
   }
 });
+
+
+
+
+const popup = document.getElementById('successPopup');
+const popupClose = document.getElementById('popupClose');
+
+function openPopup() {
+  popup.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closePopup() {
+  popup.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+// Закрытие крестиком
+popupClose.addEventListener('click', closePopup);
+
+// Закрытие по фону
+popup.addEventListener('click', (e) => {
+  if (e.target === popup) closePopup();
+});
+
+// Закрытие по Escape
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closePopup();
+});
+
+// Отправка формы
+document.getElementById('my-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  // Здесь ваша логика отправки (fetch/AJAX)
+  openPopup();
+});
